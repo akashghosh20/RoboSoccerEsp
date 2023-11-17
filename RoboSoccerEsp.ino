@@ -113,35 +113,35 @@ void turnLeft() {
 void forwardLeft()
 {
   digitalWrite(relay1, LOW);
-  digitalWrite(relay2, HIGH);
+  digitalWrite(relay2, LOW);
   digitalWrite(relay3, LOW);
-  digitalWrite(relay4, LOW);
+  digitalWrite(relay4, HIGH);
   Serial.println("The bot is going forward-left");
 }
 
 void forwardRight()
 {
   digitalWrite(relay1, LOW);
-  digitalWrite(relay2, LOW);
-  digitalWrite(relay3, HIGH);
+  digitalWrite(relay2, HIGH);
+  digitalWrite(relay3, LOW);
   digitalWrite(relay4, LOW);
   Serial.println("The bot is going forward-right");
 }
 
 void backwardLeft()
 {
-  digitalWrite(relay1, HIGH);
+  digitalWrite(relay1, LOW);
   digitalWrite(relay2, LOW);
-  digitalWrite(relay3, LOW);
-  digitalWrite(relay4, HIGH);
+  digitalWrite(relay3, HIGH);
+  digitalWrite(relay4, LOW);
   Serial.println("The bot is going backward-left");
 }
 
 void backwardRight()
 {
-  digitalWrite(relay1, LOW);
-  digitalWrite(relay2, HIGH);
-  digitalWrite(relay3, HIGH);
+  digitalWrite(relay1, HIGH);
+  digitalWrite(relay2, LOW);
+  digitalWrite(relay3, LOW);
   digitalWrite(relay4, LOW);
   Serial.println("The bot is going backward-right");
 }
