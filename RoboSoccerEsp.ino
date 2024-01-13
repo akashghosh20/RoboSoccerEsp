@@ -46,16 +46,16 @@ void handleBluetoothData(char data) {
     case 'R':
       turnRight();
       break;
-    case 'l':
+    case 'G':
       forwardLeft();
       break;
     case 'r':
       forwardRight();
       break;
-    case 'b':
+    case 'H':
       backwardLeft();
       break;
-    case 'I':
+    case 'J':
       backwardRight();
       break;
     case 'S':
